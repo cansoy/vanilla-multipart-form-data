@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <hr>
+    <div class="container">
+        <div  class="box">
+            <img id="image-box">
+        </div>
+        <div  class="box">
+            <video id="video-box">
+        </div>
+    </div>
+    <form action="/posted" method="post" enctype="multipart/form-data">
+        <p>name:</p>
+        <input id="name" type="text" name="name" value="muha">
+        <p>surname:</p>
+        <input id="surname" type="text" name="surname" value="cansoy">
+        <p>city:</p>
+        <input id="city" type="text" name="city" value="ankara">
+        <p>file-image:</p>
+        <input id="image" type="file" name="image" >
+        <p>file-video:</p>
+        <input id="video" type="file" name="video" >
+       <p>file-pdf:</p>
+        <input id="pdf" type="file" name="pdf" >
+        <p>file-text:</p>
+        <input id="text" type="file" name="text" >
+        <br><br>
+        <button id="saveBtn" type="submit">Save Me</button>
+    </form>
+    <hr>
+    <hr>
+    <br><a href="/image">Show Image-Set Header IMAGE !!!</a>
+    <br>
+    <br><a href="/video">Show Video-Set Header VIDEO !!!</a>
+    <br>
+    <br><a href="/pdf">Show PDF-Set Header PDF !!!</a>
+    <br>
+    <br><a href="/text">Show TEXT-Set Header TEXT !!!</a>
+    <br>
+    <hr>
+    <hr>
+    <div class="db-show">
+        <br>
+            <a href="/db/image">DB-Show Image-Set Header IMAGE !!!</a>
+        <br>
+        <br>
+            <a href="/db/video">DB-Show Video-Set Header VIDEO !!!</a>
+        <br>
+        <br>
+            <a href="/db/pdf">DB-Show PDF-Set Header PDF !!!</a>
+        <br>
+        <br>
+            <a href="/db/text">DB-Show TEXT-Set Header TEXT !!!</a>
+        <br>
+        <br>
+    </div>
+
+    <div class="db-download">
+        <br>
+            <a href="/dw/image">DB-Download Image-Set Header IMAGE !!!</a>
+        <br>
+        <br>
+            <a href="/dw/video">DB-Download Video-Set Header VIDEO !!!</a>
+        <br>
+        <br>
+            <a href="/dw/pdf">DB-Download PDF-Set Header PDF !!!</a>
+        <br>
+        <br>
+            <a href="/dw/text">DB-Download TEXT-Set Header TEXT !!!</a>
+        <br>
+        <br>
+    </div>
+</body>
+</html>
